@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ConfirmBooking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+
+            android:layout_marginTop="0dp"
+            android:background="@drawable/top"
+            android:scaleType="fitXY" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="574dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/confirmPayment"
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Xác nhận thông tin thanh toán"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="343dp"
+                    android:layout_height="200.45977783203dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/card_1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_nameCard"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="250dp"
+                            android:layout_marginTop="10dp"
+                            android:enabled="false"
+                            android:text="VISA"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_numberCard"
+                            android:layout_width="232dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="50dp"
+                            android:enabled="false"
+                            android:text="4000 0000 0000 0002"
+                            android:textColor="@color/white"
+                            android:textSize="19sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_NameOnCard"
+
+                                android:layout_width="203dp"
+                                android:layout_height="33.5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="31dp"
+                                android:enabled="false"
+                                android:text="NGUYEN VIET NAM"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txt_Expire"
+                                android:layout_width="92dp"
+                                android:layout_height="33.5dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="31dp"
+                                android:enabled="false"
+                                android:text="04/2025"
+                                android:textColor="@color/white"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="344dp"
+                    android:layout_height="129dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shadow"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_NameHouseCar"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="33.5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="50dp"
+                        android:enabled="false"
+                        android:text="Đại Ngân"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="102dp"
+                        android:layout_height="91dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_HourBegin"
+
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:enabled="false"
+                            android:text="9:23"
+                            android:textColor="#244CBA"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_LocalBegin"
+
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:enabled="false"
+                            android:text="ĐÀ LẠT"
+                            android:textColor="#B7B7B7"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgcarPay"
+                        android:layout_width="29.18359375dp"
+                        android:layout_height="29.183502197266dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/ic_directions_bus_24px" />
+
+                    <LinearLayout
+                        android:layout_width="134dp"
+                        android:layout_height="91dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_HourEnd"
+
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:enabled="false"
+                            android:text="12:23"
+                            android:textColor="#244CBA"
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_LocalEnd"
+
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="TP HCM"
+                            android:textColor="#B7B7B7"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_num_Tic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:text="Số vé:"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/txt_num_Seat"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:text="Số ghế:"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPriceTicket"
+
+                    android:layout_width="368dp"
+                    android:layout_height="82dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="200,000 VND"
+                    android:textAlignment="gravity"
+
+                    android:textColor="#244CBA"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="345dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_button"
+            android:text="Thanh toán"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="multiply" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
