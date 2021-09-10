@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Pay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+
+            android:layout_marginTop="0dp"
+            android:background="@drawable/top"
+            android:scaleType="fitXY" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/add_your_credit_card"
+                    android:layout_width="336dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Thêm thông tin tài khoản của bạn"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/visa"
+                    android:layout_width="320dp"
+                    android:layout_height="200.45977783203dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/visa" />
+
+                <TextView
+                    android:id="@+id/p__card_number_"
+                    android:layout_width="114dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Số thẻ:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtcard_number"
+                    android:layout_width="347dp"
+                    android:layout_height="61dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/shadow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="193dp"
+                        android:layout_height="106dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/p_expiry_date"
+
+                            android:layout_width="147dp"
+                            android:layout_height="37dp"
+
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Ngày hết hạn:"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtExpiry_date"
+                            android:layout_width="156dp"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/shadow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="197dp"
+                        android:layout_height="106dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/p_cvv"
+                            android:layout_width="147dp"
+                            android:layout_height="37dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="10dp"
+                            android:text="CVV:"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtCVV"
+                            android:layout_width="154dp"
+                            android:layout_height="64dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/shadow" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/p_NameOnCard"
+                    android:layout_width="114dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="0dp"
+
+                    android:text="Tên trên thẻ:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNameOnCard"
+                    android:layout_width="347dp"
+                    android:layout_height="66dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/shadow" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="345dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/background_button"
+                    android:text="Thêm"
+                    app:backgroundTint="#FFFFFF"
+                    app:backgroundTintMode="multiply" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
