@@ -33,7 +33,15 @@
 
     <style name="modifiedEditText" parent="parent">
         <item name="android:textSize">@dimen/newsMoreTextSize</item>
-        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/primaryTextColor</item>
+<!--        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/primaryTextColor</item>-->
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/purple_500</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+    <style name="modifiedEditText2" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <!--        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/primaryTextColor</item>-->
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/white</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
     </style>
 
     <style name="loginButton" parent="viewParent">
