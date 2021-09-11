@@ -124,7 +124,7 @@ public class Findtrip2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if(tripPri!=null){
+                if(tripPri==null){
                     Toast.makeText(Findtrip2.this, "Vui lòng chọn 1 vé!",Toast.LENGTH_SHORT).show();
                 }else {
                     Intent intent1 = new Intent(Findtrip2.this, ChooseSeat.class);
