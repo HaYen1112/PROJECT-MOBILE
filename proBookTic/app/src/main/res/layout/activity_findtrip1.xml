@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".View.Findtrip1">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
 
+        android:layout_marginTop="0dp"
+        android:background="@drawable/top"
+        android:scaleType="fitXY" />
 
     <RadioGroup
         android:id="@+id/radioGr"
@@ -216,13 +223,16 @@
         tools:layout_editor_absoluteX="200dp"
         tools:layout_editor_absoluteY="580dp">
 
-        <ImageButton
+        <Button
             android:id="@+id/imgBttTimchuyendi"
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:background="@android:color/transparent"
+            android:background="@drawable/background_button"
             android:scaleType="fitXY"
+            android:text="tìm kiếm ngay"
+            app:backgroundTintMode="multiply"
+            app:backgroundTint="@color/white"
             app:srcCompat="@drawable/find_now" />
 
     </LinearLayout>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="edu.nlu.probooktic">
 
     <application
@@ -10,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProBookTic">
-        <activity android:name=".View.TicketCart"></activity>
-        <activity android:name=".View.Findtrip1" />
+        <activity android:name=".View.kaka"></activity>
+        <activity android:name=".View.TicketCart" />
+        <activity android:name=".View.ChooseSeat" />
         <activity android:name=".View.Findtrip2" />
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
@@ -24,7 +24,7 @@
         <activity android:name=".View.ConfirmBooking" />
         <activity android:name=".View.Pay" />
         <activity android:name=".View.DetailedTrip" />
-        <activity android:name=".View.ChooseSeat">
+        <activity android:name=".View.Findtrip1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

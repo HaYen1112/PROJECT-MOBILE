@@ -1,11 +1,12 @@
 package edu.nlu.probooktic.Model;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringTokenizer;
 
-public class Trip {
+public class Trip implements Serializable {
     private String idtrip;
     private String diemKH;
     private String diemKT;
@@ -111,7 +112,7 @@ public class Trip {
     }
 
     public static void main(String[] args) throws ParseException {
-        System.out.println(Trip.toTrip("Tiền Giang - TP.HCM\t Thời gian: 9:00 - 13:00\nNgày: 2021-07-19").toString());
+       // System.out.println(Trip.toTrip("Tiền Giang - TP.HCM\t Thời gian: 9:00 - 13:00\nNgày: 2021-07-19").toString());
         ;
     }
 
