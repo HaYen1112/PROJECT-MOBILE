@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".View.RegisterActivity"
     android:layout_gravity="center"
-    android:background="@color/xanh"
+    android:background="@color/register_bk_color"
     android:focusableInTouchMode="true"
     android:gravity="center">
 
@@ -29,16 +29,16 @@
                     style="@style/viewParent.headerText.NoMode"
                     android:layout_alignParentTop="true"
                     android:layout_centerVertical="true"
-                    android:text="Sign Up"
-                    android:textColor="@color/purple_100"/>
+                    android:text="Here's\nyour first\nstep with\nus!"
+                    android:textColor="@color/whiteTextColor"/>
 
-<!--                    <ImageView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_alignParentTop="true"-->
-<!--                        android:layout_alignParentEnd="true"-->
-<!--                        android:src="@drawable/ic_login_hero"-->
-<!--                        android:layout_alignParentRight="true" />-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_login_hero"
+                        android:layout_alignParentRight="true" />
             </RelativeLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -49,7 +49,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="523dp"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:orientation="vertical">
 
@@ -60,12 +60,11 @@
 
                         <EditText
                             android:id="@+id/editTextName"
-                            style="@style/modifiedEditText2"
+                            style="@style/modifiedEditText"
                             android:hint="Name"
                             android:inputType="textPersonName"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputEmail"
                         style="@style/parent"
@@ -73,12 +72,11 @@
 
                         <EditText
                             android:id="@+id/editTextEmail"
-                            style="@style/modifiedEditText2"
+                            style="@style/modifiedEditText"
                             android:hint="@string/login_email_hint"
                             android:inputType="textEmailAddress"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputMobile"
                         style="@style/parent"
@@ -86,12 +84,11 @@
 
                         <EditText
                             android:id="@+id/editTextMobile"
-                            style="@style/modifiedEditText2"
+                            style="@style/modifiedEditText"
                             android:hint="Mobile Number"
                             android:inputType="phone"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/textInputPassword"
                         style="@style/parent"
@@ -99,7 +96,7 @@
 
                         <EditText
                             android:id="@+id/editTextPassword"
-                            style="@style/modifiedEditText2"
+                            style="@style/modifiedEditText"
                             android:hint="@string/login_password_hint"
                             android:inputType="textPassword"
                             android:maxLines="1" />
@@ -114,18 +111,17 @@
                         app:initialCornerAngle="27dp"
                         app:spinning_bar_color="#FFF"
                         app:spinning_bar_padding="6dp"
-                        app:spinning_bar_width="4dp" />
-
+                        app:spinning_bar_width="4dp"/>
                     <TextView
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
-                        android:gravity="center_horizontal"
                         android:onClick="onLoginClick"
                         android:text="Already have an account?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/themeColor"
                         android:textSize="17sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -148,7 +144,7 @@
                     android:layout_weight="6"
                     android:text="User other Methods"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/whiteTextColor"
                     android:textSize="12sp"
                     android:gravity="center_horizontal" />
 
@@ -183,13 +179,13 @@
         </LinearLayout>
 
     </ScrollView>
-<!--    <View-->
-<!--        android:layout_width="11dp"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_alignParentRight="true"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:background="@drawable/ic_side_bg"/>-->
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg"/>
 
     <ImageView
         android:layout_width="wrap_content"
