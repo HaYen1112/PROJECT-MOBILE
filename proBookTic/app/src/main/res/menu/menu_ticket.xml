@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Đặt vé xe"
+        android:id="@+id/booking"
+        android:orderInCategory="1"/>
+    <item android:title="Ký gửi hàng hóa"
+        android:id="@+id/kghh"
+        android:orderInCategory="2"/>
+    <item android:title="Khuyến mãi"
+        android:id="@+id/km"
+        android:orderInCategory="3"/>
+    <item android:title="Giỏ vé"
+        android:id="@+id/giove"
+        app:showAsAction="always"/>
+    <item android:title="Tìm kiếm"
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        />
+
+</menu>
