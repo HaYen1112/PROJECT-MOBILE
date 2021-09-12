@@ -3,7 +3,6 @@
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="n_i_dung">Nội dung</string>
-<<<<<<< HEAD
 
     <string name="name">Họ và tên(*):</string>
     <string name="phone">Điện thoại(*):</string>
@@ -30,6 +29,3 @@
     <string name="success">Thành công</string>
 
 </resources>
-=======
-</resources>
->>>>>>> main
