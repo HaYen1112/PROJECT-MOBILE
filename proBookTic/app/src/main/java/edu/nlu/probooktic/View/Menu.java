@@ -92,6 +92,18 @@ public class Menu extends AppCompatActivity {
     private void actionViewTrip() {
         listTrip = new ArrayList<>();
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
+<<<<<<< HEAD
+        listTrip.add(new TripItem("Tiền Giang - Vĩnh Long", "5:00 AM", "100.000 Đồng", "63B1 - 05566"));
+        listTrip.add(new TripItem("Đồng Tháp - Cà Mau", "1:00 PM", "150.000 Đồng", "55S2 - 02452"));
+        listTrip.add(new TripItem("Bến Tre - Long An", "5:00 PM", "100.000 Đồng", "71B1 - 05541"));
+        listTrip.add(new TripItem("Trà Vinh - An Giang", "2:00 AM", "150.000 Đồng", "78D1 - 04657"));
+        listTrip.add(new TripItem("Hậu Giang - TP HCM", "3:00 AM", "200.000 Đồng", "45S3 - 01234"));
+        listTrip.add(new TripItem("Cần Thơ - TP HCM", "8:00 AM", "220.000 Đồng", "51B1 - 07845"));
+        listTrip.add(new TripItem("Bến Tre - Cần Thơ", "9:00 PM", "120.000 Đồng", "71C2 - 07541"));
+        listTrip.add(new TripItem("Vĩnh Long - Đồng Tháp", "1:00 PM", "100.000 Đồng", "55C3 - 04561"));
+        listTrip.add(new TripItem("Kiên Giang - Vũng Tàu", "10:00 AM", "320.000 Đồng", "45TH - 06024"));
+        listTrip.add(new TripItem("Long An - Trà Vinh", "5:00 PM", "90.000 Đồng", "61B3 - 04142"));
+=======
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
@@ -102,6 +114,7 @@ public class Menu extends AppCompatActivity {
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
         listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
+>>>>>>> main
         tripsAdapter = new TripHomeAdapter(this, R.layout.trip_item, listTrip);
         listView1.setAdapter(tripsAdapter);
     }

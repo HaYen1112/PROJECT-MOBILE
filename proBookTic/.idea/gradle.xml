@@ -5,7 +5,11 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
+<<<<<<< HEAD
+        <option name="testRunner" value="GRADLE" />
+=======
         <option name="testRunner" value="PLATFORM" />
+>>>>>>> main
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="1.8" />
@@ -16,7 +20,10 @@
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+<<<<<<< HEAD
+=======
         <option name="useQualifiedModuleNames" value="true" />
+>>>>>>> main
       </GradleProjectSettings>
     </option>
   </component>
