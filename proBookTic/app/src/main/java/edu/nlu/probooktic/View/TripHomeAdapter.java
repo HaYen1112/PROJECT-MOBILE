@@ -60,7 +60,7 @@ public class TripHomeAdapter extends BaseAdapter {
             holder = (ViewHolders) convertView.getTag();
         }
         holder.chuyenDi.setText("Chuyến đi: "+ listTrip.get(position).getChuyenDi());
-        holder.gioKH.setText("Giờ khởi hành: "+ listTrip.get(position).getGioKH());
+        holder.gioKH.setText("Ngày - Giờ: "+ listTrip.get(position).getGioKH());
         holder.giaVe.setText("Giá vé: "+ listTrip.get(position).getGiaVe());
         holder.bienSoXe.setText("Biển số xe: "+ listTrip.get(position).getBienSoXe());
 
