@@ -89,6 +89,10 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
         seatGaping_TB = (int)width/27;
 
         //////////////////////////////
+        //get the bundle to get list seat choosed
+        Intent intent=getIntent();
+        trip=(Trip)intent.getSerializableExtra("trip");
+        //////////////////////////////
 
 
         Query query = FirebaseDatabase.getInstance().getReference("ticket")
