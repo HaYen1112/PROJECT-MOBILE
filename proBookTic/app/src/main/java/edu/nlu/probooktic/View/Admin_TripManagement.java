@@ -17,8 +17,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import edu.nlu.probooktic.Model.Ticket;
-import edu.nlu.probooktic.Model.Trip;
 import edu.nlu.probooktic.Model.TripInfo;
 import edu.nlu.probooktic.R;
 
@@ -44,7 +42,7 @@ public class Admin_TripManagement extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        adapter = new TripManagementAdapter(this, R.layout.trip_item, arrTripInf);
+        adapter = new TripManagementAdapter(this, R.layout.trip_item_for_list, arrTripInf);
         lvTripInfo.setAdapter(adapter);
 
 
