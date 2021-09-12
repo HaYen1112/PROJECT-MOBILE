@@ -108,7 +108,7 @@ public class TicketCartModel {
         return listSeat;
     }
 //    public ArrayList<TicketCartModel> createList() {
-//         Trip trip = new Trip("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
+//         Trip trip = new TripInfo("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
 //
 //        ArrayList<TicketCartModel> arr = new ArrayList<>();
 //        arr.add(new TicketCartModel("C001", "IDVE002", "A2", "Nguyễn Ngọc Lan", "121455555", TicketDAO.dateExpire(), trip.toString(),125000));
