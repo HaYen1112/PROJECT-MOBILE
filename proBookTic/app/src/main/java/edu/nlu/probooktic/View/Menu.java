@@ -91,17 +91,17 @@ public class Menu extends AppCompatActivity {
 
     private void actionViewTrip() {
         listTrip = new ArrayList<>();
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
-        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
+        listTrip.add(new TripItem("Kiên Giang - Cần Thơ", "14/09/2021 - 9:00 AM", "120.000 Đồng", "65TK - 09867"));
         tripsAdapter = new TripHomeAdapter(this, R.layout.trip_item, listTrip);
         listView1.setAdapter(tripsAdapter);
     }
