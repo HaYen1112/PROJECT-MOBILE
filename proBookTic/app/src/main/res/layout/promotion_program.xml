@@ -95,7 +95,7 @@
                             android:textStyle="italic" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/textView545"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
@@ -120,7 +120,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ticket"
+                android:id="@+id/cv_tickets"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -165,7 +165,7 @@
                             android:textStyle="italic" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/textView546"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
@@ -191,7 +191,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ticket"
+                android:id="@+id/cv_ticket3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -234,7 +234,7 @@
                             android:textStyle="italic" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/textView547"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
@@ -259,7 +259,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ticket"
+                android:id="@+id/cv_ticket9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -302,7 +302,7 @@
                             android:textStyle="italic" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/textView548"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
@@ -327,7 +327,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ticket"
+                android:id="@+id/cv_ticketk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -370,7 +370,7 @@
                             android:textStyle="italic" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/textView54a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
@@ -395,7 +395,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cv_ticket"
+                android:id="@+id/cv_ticketd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -438,7 +438,7 @@
                             android:textStyle="italic" />
 
                         <TextView
-                            android:id="@+id/textView54"
+                            android:id="@+id/textView54n"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"

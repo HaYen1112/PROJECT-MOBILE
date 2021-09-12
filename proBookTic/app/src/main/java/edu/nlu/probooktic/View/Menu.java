@@ -74,7 +74,7 @@ public class Menu extends AppCompatActivity {
                       Toast.makeText(Menu.this, "Bạn chọn Giỏ vé", Toast.LENGTH_SHORT).show();
                       break;
                   case 2:
-                      Intent intent3 = new Intent(Menu.this, Menu.class);
+                      Intent intent3 = new Intent(Menu.this, PromotionProgram.class);
                       startActivity(intent3);
                       Toast.makeText(Menu.this, "Bạn Chọn Khuyến mãi", Toast.LENGTH_SHORT).show();
                       break;
