@@ -20,6 +20,7 @@ public class TripsAdapter extends BaseAdapter {
     private int layout;
     private List<Trip> dstrip;
 
+
     public TripsAdapter(Context context, int layout, List<Trip> dstrip) {
         this.context = context;
         this.layout = layout;

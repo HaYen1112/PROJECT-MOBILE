@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.Menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <androidx.drawerlayout.widget.DrawerLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fitsSystemWindows="true"
+      android:id="@+id/menu_home"
+      >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbars"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:background="#0A80DF" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="@string/n_i_dung">
+
+              </TextView>
+          </LinearLayout>
+      </LinearLayout>
+      <com.google.android.material.navigation.NavigationView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:fitsSystemWindows="true"
+          android:id="@+id/navigation_menu">
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewMenu"
+                android:layout_marginTop="50dp">
+
+            </ListView>
+      </com.google.android.material.navigation.NavigationView>
+  </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
