@@ -82,9 +82,9 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
         long width = size.x;
         Log.e(TAG,width+"");
 
-         seatSize = (int)width/12;
-         seatGaping_LT = (int)width/30;
-         seatGaping_TB = (int)width/27;
+        seatSize = (int)width/12;
+        seatGaping_LT = (int)width/30;
+        seatGaping_TB = (int)width/27;
 
         //////////////////////////////
 

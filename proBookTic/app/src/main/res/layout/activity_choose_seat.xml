@@ -9,15 +9,14 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbarchooseseat"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="?android:attr/colorFocusedHighlight"></androidx.appcompat.widget.Toolbar>
+            >
+           </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -183,7 +182,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_alignParentTop="true"
-                        android:layout_marginTop="270dp"
+                        android:layout_marginTop="280dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -282,12 +281,14 @@
 
 
                         </LinearLayout>
+
                     </LinearLayout>
 
                 </RelativeLayout>
 
 
             </LinearLayout>
+
         </ScrollView>
 
     </LinearLayout>
