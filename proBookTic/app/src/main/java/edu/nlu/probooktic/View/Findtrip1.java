@@ -29,6 +29,7 @@ import java.util.Calendar;
 
 import edu.nlu.probooktic.Model.Date;
 import edu.nlu.probooktic.Model.Trip;
+import edu.nlu.probooktic.Model.TripInfo;
 import edu.nlu.probooktic.R;
 
 public class Findtrip1 extends AppCompatActivity {
@@ -119,62 +120,64 @@ public class Findtrip1 extends AppCompatActivity {
 
         mdata = FirebaseDatabase.getInstance().getReference();
 
-        /*ArrayList<Trip> arrTrip = new ArrayList<>();
+        /*ArrayList<Trip> ds = new ArrayList<>();
         try {
-            arrTrip.add( new Trip("TR0001", "TP HCM", "HA NOI", Trip.stringToDate("2021-12-26"), "9H00", "13H00", "63F-5236"));
+            ds.add( new TripInfo("TR0001", "TP HCM", "HA NOI",  "9H00", "13H00", "63F-5236"));
 
 
-            arrTrip.add(new Trip("TR00001", "TP HCM", "HA NOI",  Trip.stringToDate("2021-12-26"),"6H30", "11H30","59B-00156"));
-            arrTrip.add(new Trip("TR00002", "TP HCM", "HA NOI",  Trip.stringToDate("2021-12-26"),"7H30", "12H30","57B-85586"));
-            arrTrip.add(new Trip("TR00003", "TP HCM", "HA NOI",  Trip.stringToDate("2021-12-26"),"8H30", "13H30","59B-08964"));
-            arrTrip.add(new Trip("TR00004", "TP HCM", "HA NOI",  Trip.stringToDate("2021-12-26"),"9H30", "14H30","56B-22545"));
-            arrTrip.add(new Trip("TR00005", "TP HCM", "HA NOI",  Trip.stringToDate("2021-12-26"),"10H30", "15H30","59D-01578"));
-            arrTrip.add(new Trip("TR00006", "TP HCM", "HA NOI",  Trip.stringToDate("2021-12-26"),"11H30", "16H30","59A-58814"));
+            ds.add(new TripInfo("TR00001", "TP HCM", "HA NOI",  "6H30", "11H30","59B-00156"));
+            ds.add(new TripInfo("TR00002", "TP HCM", "HA NOI",  "7H30", "12H30","57B-85586"));
+            ds.add(new TripInfo("TR00003", "TP HCM", "HA NOI",  "8H30", "13H30","59B-08964"));
+            ds.add(new TripInfo("TR00004", "TP HCM", "HA NOI",  "9H30", "14H30","56B-22545"));
+            ds.add(new TripInfo("TR00005", "TP HCM", "HA NOI",  "10H30", "15H30","59D-01578"));
+            ds.add(new TripInfo("TR00006", "TP HCM", "HA NOI",  "11H30", "16H30","59A-58814"));
 
 
-            arrTrip.add(new Trip("TR00007", "HA NOI", "TP HCM",  Trip.stringToDate("2021-12-28"),"6H30", "11H30","51C-25896"));
-            arrTrip.add(new Trip("TR00008", "HA NOI", "TP HCM", Trip.stringToDate("2021-12-28"),"7H30", "12H30","51C-25896"));
-            arrTrip.add(new Trip("TR00009", "HA NOI", "TP HCM",  Trip.stringToDate("2021-12-28"),"8H30", "13H30","51C-25896"));
-            arrTrip.add(new Trip("TR00010", "HA NOI", "TP HCM",  Trip.stringToDate("2021-12-28"),"9H30", "14H30","51C-25896"));
-            arrTrip.add(new Trip("TR00011", "HA NOI", "TP HCM",  Trip.stringToDate("2021-12-28"),"10H30", "15H30","51C-25896"));
-            arrTrip.add(new Trip("TR00012", "HA NOI", "TP HCM",  Trip.stringToDate("2021-12-28"),"11H30", "16H30","51C-25896"));
+            ds.add(new TripInfo("TR00007", "HA NOI", "TP HCM",  "6H30", "11H30","51C-25896"));
+            ds.add(new TripInfo("TR00008", "HA NOI", "TP HCM", "7H30", "12H30","51C-25896"));
+            ds.add(new TripInfo("TR00009", "HA NOI", "TP HCM",  "8H30", "13H30","51C-25896"));
+            ds.add(new TripInfo("TR00010", "HA NOI", "TP HCM",  "9H30", "14H30","51C-25896"));
+            ds.add(new TripInfo("TR00011", "HA NOI", "TP HCM",  "10H30", "15H30","51C-25896"));
+            ds.add(new TripInfo("TR00012", "HA NOI", "TP HCM",  "11H30", "16H30","51C-25896"));
 
-            arrTrip.add(new Trip("TR00013", "HUE", "NHA TRANG",  Trip.stringToDate("2021-10-29"),"6H30", "11H30","51C-25896"));
-            arrTrip.add(new Trip("TR00014", "HUE", "NHA TRANG",  Trip.stringToDate("2021-10-29"),"7H30", "12H30","51C-25896"));
-            arrTrip.add(new Trip("TR00015", "HUE", "NHA TRANG",  Trip.stringToDate("2021-10-29"),"8H30", "13H30","51C-25896"));
-            arrTrip.add(new Trip("TR00016", "HUE", "NHA TRANG",  Trip.stringToDate("2021-10-29"),"9H30", "14H30","51C-25896"));
-            arrTrip.add(new Trip("TR00017", "HUE", "NHA TRANG",  Trip.stringToDate("2021-10-29"),"10H30", "15H30","51C-25896"));
-            arrTrip.add(new Trip("TR00018", "HUE", "NHA TRANG",  Trip.stringToDate("2021-10-29"),"11H30", "16H30","51C-25896"));
+            ds.add(new TripInfo("TR00013", "HUE", "NHA TRANG",  "6H30", "11H30","51C-25896"));
+            ds.add(new TripInfo("TR00014", "HUE", "NHA TRANG",  "7H30", "12H30","51C-25896"));
+            ds.add(new TripInfo("TR00015", "HUE", "NHA TRANG",  "8H30", "13H30","51C-25896"));
+            ds.add(new TripInfo("TR00016", "HUE", "NHA TRANG",  "9H30", "14H30","51C-25896"));
+            ds.add(new TripInfo("TR00017", "HUE", "NHA TRANG",  "10H30", "15H30","51C-25896"));
+            ds.add(new TripInfo("TR00018", "HUE", "NHA TRANG",  "11H30", "16H30","51C-25896"));
 
-            arrTrip.add(new Trip("TR00019", "NHA TRANG", "HUE",  Trip.stringToDate("2021-10-30"),"6H30", "11H30","51C-25896"));
-            arrTrip.add(new Trip("TR00020", "NHA TRANG", "HUE",  Trip.stringToDate("2021-10-30"),"7H30", "12H30","51C-25896"));
-            arrTrip.add(new Trip("TR00021", "NHA TRANG", "HUE",  Trip.stringToDate("2021-10-30"),"8H30", "13H30","51C-25896"));
-            arrTrip.add(new Trip("TR00022", "NHA TRANG", "HUE",  Trip.stringToDate("2021-10-30"),"9H30", "14H30","51C-25896"));
-            arrTrip.add(new Trip("TR00023", "NHA TRANG", "HUE",  Trip.stringToDate("2021-10-30"),"10H30", "15H30","51C-25896"));
-            arrTrip.add(new Trip("TR00024", "NHA TRANG", "HUE",  Trip.stringToDate("2021-10-30"),"11H30", "16H30","51C-25896"));
+            ds.add(new TripInfo("TR00019", "NHA TRANG", "HUE",  "6H30", "11H30","51C-25896"));
+            ds.add(new TripInfo("TR00020", "NHA TRANG", "HUE",  "7H30", "12H30","51C-25896"));
+            ds.add(new TripInfo("TR00021", "NHA TRANG", "HUE",  "8H30", "13H30","51C-25896"));
+            ds.add(new TripInfo("TR00022", "NHA TRANG", "HUE",  "9H30", "14H30","51C-25896"));
+            ds.add(new TripInfo("TR00023", "NHA TRANG", "HUE",  "10H30", "15H30","51C-25896"));
+            ds.add(new TripInfo("TR00024", "NHA TRANG", "HUE",  "11H30", "16H30","51C-25896"));
 
-            arrTrip.add(new Trip("TR00025", "TP HCM", "HA NOI", Trip.stringToDate("2021-10-1"),"1H30", "11H30","51C-25896"));
-            arrTrip.add(new Trip("TR00026", "HA NOI", "TP HCM",  Trip.stringToDate("2021-10-2"),"14H30", "18H30","51C-25896"));
-            arrTrip.add(new Trip("TR00027", "KHANH HOA", "TP HCM", Trip.stringToDate("2021-10-3"),"7H40", "10H40","51C-25896"));
-            arrTrip.add(new Trip("TR00028", "TP HCM", "KHANH HOA", Trip.stringToDate("2021-10-4"),"7H50", "10H45","51C-25896"));
-            arrTrip.add(new Trip("TR00029", "TP HCM", "HA NOI",  Trip.stringToDate("2021-10-5"),"2H30", "11H30","51C-25896"));
-            arrTrip.add(new Trip("TR00030", "HA NOI", "TP HCM",  Trip.stringToDate("2021-1-6"),"15H30", "18H30","51C-25896"));
-            arrTrip.add(new Trip("TR00031", "KHANH HOA", "TP HCM",  Trip.stringToDate("2021-1-7"),"8H40", "10H40","51C-25896"));
-            arrTrip.add(new Trip("TR00033", "TP HCM", "KHANH HOA",Trip.stringToDate("2021-10-8"),"8H50", "10H45","51C-25896"));
-            arrTrip.add(new Trip("TR00034", "TP HCM", "HA NOI",  Trip.stringToDate("2021-10-9"),"3H30", "11H30","51C-25896"));
-            arrTrip.add(new Trip("TR00035", "HA NOI", "TP HCM",  Trip.stringToDate("2021-10-10"),"9H30", "18H30","51C-25896"));
-            arrTrip.add(new Trip("TR00036", "KHANH HOA", "TP HCM",  Trip.stringToDate("2021-10-11"),"1H40", "10H40","51C-25896"));
-            arrTrip.add(new Trip("TR00037", "TP HCM", "KHANH HOA", Trip.stringToDate("2021-10-12"),"4H50", "10H45","51C-25896"));
+            ds.add(new TripInfo("TR00025", "TP HCM", "HA NOI", Trip.stringToDate("2021-10-1"),"1H30", "11H30","51C-25896"));
+            ds.add(new TripInfo("TR00026", "HA NOI", "TP HCM",  Trip.stringToDate("2021-10-2"),"14H30", "18H30","51C-25896"));
+            ds.add(new TripInfo("TR00027", "KHANH HOA", "TP HCM", Trip.stringToDate("2021-10-3"),"7H40", "10H40","51C-25896"));
+            ds.add(new TripInfo("TR00028", "TP HCM", "KHANH HOA", Trip.stringToDate("2021-10-4"),"7H50", "10H45","51C-25896"));
+            ds.add(new TripInfo("TR00029", "TP HCM", "HA NOI",  Trip.stringToDate("2021-10-5"),"2H30", "11H30","51C-25896"));
+            ds.add(new TripInfo("TR00030", "HA NOI", "TP HCM",  Trip.stringToDate("2021-1-6"),"15H30", "18H30","51C-25896"));
+            ds.add(new TripInfo("TR00031", "KHANH HOA", "TP HCM",  Trip.stringToDate("2021-1-7"),"8H40", "10H40","51C-25896"));
+            ds.add(new TripInfo("TR00033", "TP HCM", "KHANH HOA",Trip.stringToDate("2021-10-8"),"8H50", "10H45","51C-25896"));
+            ds.add(new TripInfo("TR00034", "TP HCM", "HA NOI",  Trip.stringToDate("2021-10-9"),"3H30", "11H30","51C-25896"));
+            ds.add(new TripInfo("TR00035", "HA NOI", "TP HCM",  Trip.stringToDate("2021-10-10"),"9H30", "18H30","51C-25896"));
+            ds.add(new TripInfo("TR00036", "KHANH HOA", "TP HCM",  Trip.stringToDate("2021-10-11"),"1H40", "10H40","51C-25896"));
+            ds.add(new TripInfo("TR00037", "TP HCM", "KHANH HOA", Trip.stringToDate("2021-10-12"),"4H50", "10H45","51C-25896"));
 
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
-        for (Trip x:arrTrip) {
+        for (Trip x:ds) {
             mdata.child("Trip").child(x.getIdtrip()).setValue(x);
         }
 
 */
+        /*ArrayList<TripInfo> arr = TripInfo.createList();
+        TripInfo.insertDB(arr);*/
         mdata.child("Trip").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot snapshot, String previousChildName) {
