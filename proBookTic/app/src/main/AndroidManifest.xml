@@ -24,7 +24,8 @@
         <activity android:name=".View.ConfirmBooking" />
         <activity android:name=".View.Pay" />
         <activity android:name=".View.DetailedTrip" />
-        <activity android:name=".View.ChooseSeat">
+        <activity android:name=".View.ChooseSeat"/>
+        <activity android:name=".View.Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

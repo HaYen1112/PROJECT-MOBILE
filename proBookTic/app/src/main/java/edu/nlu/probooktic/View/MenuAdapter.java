@@ -46,10 +46,9 @@ public class MenuAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null){
-            LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(layout, null);
             holder = new ViewHolder();
-
             holder.tv = convertView.findViewById(R.id.tvItem);
             holder.iv = convertView.findViewById(R.id.ivItem);
             convertView.setTag(holder);
@@ -58,7 +57,7 @@ public class MenuAdapter extends BaseAdapter {
         }
         holder.tv.setText(listItem.get(position).nameItem);
         holder.iv.setImageResource(listItem.get(position).icon);
-        return null;
+        return convertView;
     }
 
 }
