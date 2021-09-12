@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     package="edu.nlu.probooktic">
 
     <application
@@ -9,14 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProBookTic">
+
         <activity android:name=".View.AddTripInfomation"></activity>
-        <activity android:name=".View.Findtrip1" />
-        <activity android:name=".View.TicketCart" />
-        <activity android:name=".View.ChooseSeat" />
+
         <activity android:name=".View.Findtrip2" />
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
-        <activity android:name=".View.LoginActivity" />
+        <activity android:name=".View.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".View.RegisterActivity" />
         <activity android:name=".View.Kbyt" />
         <activity android:name=".View.Info_Cus_Get_Ticket" />
@@ -25,13 +31,14 @@
         <activity android:name=".View.ConfirmBooking" />
         <activity android:name=".View.Pay" />
         <activity android:name=".View.DetailedTrip" />
-        <activity android:name=".View.Admin_TripManagement">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".View.ChooseSeat"/>
+        <activity android:name=".View.PromotionProgram"/>
+        <activity android:name=".View.Menu">
+
+
         </activity>
+        <activity android:name=".Admin.TrangChuAdmin"/>
     </application>
 
 </manifest>

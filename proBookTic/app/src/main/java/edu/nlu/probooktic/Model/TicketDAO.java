@@ -27,7 +27,7 @@ public class TicketDAO {
     public static final String AVAILABLE_TICKET="AVAILABLE";
     public static final String RESERVED_TICKET="RESERVED";
     public static final String RESERVED_TICKET_TIME="RESERVED_TIME";
-    public static void updateSeat(String idTic,String status ) {
+    public static void updateSeat(String idTic, String status) {
         FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = mDatabase.getReference("ticket");
         switch (status) {
@@ -76,8 +76,6 @@ public class TicketDAO {
 //                            Ticket tic = new Ticket(idTrip, idTic, numOfSeat, price, status, isPayment);
 //                            list.add(tic);
 //                        }
-
-
                     }
                 }
             }

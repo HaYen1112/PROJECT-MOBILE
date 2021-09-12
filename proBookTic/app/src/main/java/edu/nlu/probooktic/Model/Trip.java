@@ -112,7 +112,7 @@ public class Trip implements Serializable {
     }
 
     public static void main(String[] args) throws ParseException {
-       // System.out.println(Trip.toTrip("Tiền Giang - TP.HCM\t Thời gian: 9:00 - 13:00\nNgày: 2021-07-19").toString());
+        System.out.println(Trip.toTrip("Tiền Giang - TP.HCM\t Thời gian: 9:00 - 13:00\nNgày: 2021-07-19").toString());
         ;
     }
 

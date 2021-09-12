@@ -13,6 +13,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Gravity;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -64,7 +65,9 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
     String selectedIds = "";
     static final String LIST_SEAT_CHOOSED = "listSeatChoosed";
     ArrayList<Integer> seatchoosed = null;//{1,8,9,....}
+
     public static Trip trip = null;//new TripInfo("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
+
     public static ArrayList<String> listSeatChoosed = new ArrayList<>();//{A1,A2,A3,....}
     TextView person;
     TextView seat;
@@ -74,7 +77,6 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_seat);
-
         //da man hinh/////////////////////////
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -82,15 +84,12 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
         long width = size.x;
         Log.e(TAG,width+"");
 
-         seatSize = (int)width/12;
-         seatGaping_LT = (int)width/30;
-         seatGaping_TB = (int)width/27;
+        seatSize = (int)width/12;
+        seatGaping_LT = (int)width/30;
+        seatGaping_TB = (int)width/27;
 
         //////////////////////////////
-        //get the bundle to get list seat choosed
-        Intent intent=getIntent();
-        trip=(Trip)intent.getSerializableExtra("trip");
-        //////////////////////////////
+
 
         Query query = FirebaseDatabase.getInstance().getReference("ticket")
                 .orderByChild("idTrip")

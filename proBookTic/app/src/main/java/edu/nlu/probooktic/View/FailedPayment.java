@@ -19,7 +19,7 @@ import edu.nlu.probooktic.R;
 
 public class FailedPayment extends AppCompatActivity {
     boolean startFromCart=Pay.startFromCart; ////Kiểm tra lấy list vé từ đâu? thanh toán hay info....
-    public static ArrayList<TicketCartModel> listTicChoosed=new ArrayList<>();
+    public static ArrayList<TicketCartModel> listTicChoosed = new ArrayList<TicketCartModel>();
 
 
 

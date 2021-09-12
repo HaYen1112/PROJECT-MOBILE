@@ -22,6 +22,7 @@ public class TripsAdapter extends BaseAdapter {
     private List<Trip> dstrip;
     public static int mSelectedItem=-1;
 
+
     public TripsAdapter(Context context, int layout, List<Trip> dstrip) {
         this.context = context;
         this.layout = layout;
