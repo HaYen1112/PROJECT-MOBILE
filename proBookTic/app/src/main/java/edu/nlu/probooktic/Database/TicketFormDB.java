@@ -5,6 +5,8 @@ public class TicketFormDB {
     private String nameOwner;
     private String idCard;
     private String idPayment;
+    private String idNameUser;
+    private String getIdNameAdmin;
 
     public TicketFormDB() {
     }
