@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -16,11 +19,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Date;
 
 import edu.nlu.probooktic.Model.Trip;
 import edu.nlu.probooktic.R;
 import edu.nlu.probooktic.View.TripsAdapter;
+
+import static android.content.ContentValues.TAG;
 
 public class Findtrip3 extends AppCompatActivity {
 
@@ -30,7 +37,8 @@ public class Findtrip3 extends AppCompatActivity {
     TextView tVdiemKhoihanh1, tVdiemKetthuc1,tVdiemKhoihanh2, tVdiemKetthuc2,tVngaydi,tVngayve;
     String[] ssdmy;
     Button buttonPre;
-
+    Button buttonNext;
+    public static Trip tripPri=null;
     private DatabaseReference mdata;
 
     @Override
@@ -48,6 +56,7 @@ public class Findtrip3 extends AppCompatActivity {
         tVngaydi = (TextView) findViewById(R.id.tVngay);
         tVngayve = (TextView) findViewById((R.id.tVngayve));
         buttonPre = (Button) findViewById(R.id.buttonPre);
+        buttonNext=(Button) findViewById(R.id.button2);
 
         //truyen du lieu tu man hinh 1 qua man hinh 2
         Intent intent = getIntent();
@@ -83,7 +92,7 @@ public class Findtrip3 extends AppCompatActivity {
         //lay du lieu tu firebase
         mdata = FirebaseDatabase.getInstance().getReference();
 
-        mdata.child("ChuyenDi").addChildEventListener(new ChildEventListener() {
+        mdata.child("Trip").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot snapshot, String previousChildName) {
                 Trip chuyendi = snapshot.getValue(Trip.class);
@@ -121,21 +130,60 @@ public class Findtrip3 extends AppCompatActivity {
                 startActivity(mhDau);
             }
         });
+        buttonNext.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                if(tripPri==null){
+                    Toast.makeText(Findtrip3.this, "Vui lòng chọn 1 vé!",Toast.LENGTH_SHORT).show();
+                }else {
+                    Intent intent1 = new Intent(Findtrip3.this, ChooseSeat.class);
+                    intent1.putExtra("trip", tripPri);
+                    startActivity(intent1);
+                }
+            }
+        });
+        ////////////////////////
+        lVtripNgaydi.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TripsAdapter.mSelectedItem = position;
+                tripPri=(Trip)adapterNgaydi.getItem(position);
+                adapterNgaydi.notifyDataSetChanged();
+            }
+        });
+
+        ///////////////////////
+        ////////////////////////
+        lVtripNgayVe.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                TripsAdapter.mSelectedItem = position;
+                tripPri=(Trip)adapterNgayve.getItem(position);
+                adapterNgayve.notifyDataSetChanged();
+            }
+        });
+
+        ///////////////////////
     }
 
     //ham tim kiem chuyen di theo diem khỏi hanh, diem ket thuc và ngay dat
     public void searchTrip(String diemKhoihanh,String diemKetthuc,Trip chuyendi,ArrayList<Trip> arTrip, String date){
         String[] splt = date.split("/");
-        for(int i = 0;i<splt.length;i++){
-                if(splt[i].charAt(0)=='0') {
-                    splt[i] = splt[i].replace("0", "");
-            }
+        String date1 = splt[2]+"-"+splt[1]+"-"+splt[0];
+        Log.e(TAG,date1);
+        Date date2=null;
+        try {
+            date2 = Trip.stringToDate(date1);
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
         if(chuyendi.getDiemKH().equals(diemKhoihanh)&&
                 chuyendi.getDiemKT().equals(diemKetthuc)&&
-                (chuyendi.getDate().getDay()+"").equals(splt[0])&&
-                (chuyendi.getDate().getMonth()+"").equals(splt[1])&&
-                (chuyendi.getDate().getYear()+"").equals(splt[2])){
+                chuyendi.getDate().getTime()-date2.getTime()==0
+        ){
             arTrip.add(chuyendi);
         }
     }

@@ -3,8 +3,6 @@
 
     <style name="modifiedEditText1" parent="parent">
         <item name="android:textSize">@dimen/newsMoreTextSize</item>
-
-<!--        <item name="android:backgroundTint">@color/primaryTextColor</item>-->
-        <item name="android:backgroundTint">@color/purple_500</item>
+        <item name="android:backgroundTint">@color/primaryTextColor</item>
     </style>
 </resources>

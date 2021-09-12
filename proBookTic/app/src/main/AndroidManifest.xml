@@ -8,11 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProBookTic">
+        android:theme="@style/Theme.ProBookTic"><<<<<<< Yen
         <activity android:name=".Admin.TrangChuAdmin" />
         <activity android:name=".Admin.UserManage" />
         <activity android:name=".View.TicketCart" />
         <activity android:name=".View.Findtrip1" />
+
+        <activity android:name=".View.kaka"></activity>
+        <activity android:name=".View.TicketCart" />
+        <activity android:name=".View.ChooseSeat" />
+
         <activity android:name=".View.Findtrip2" />
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
@@ -25,7 +30,7 @@
         <activity android:name=".View.ConfirmBooking" />
         <activity android:name=".View.Pay" />
         <activity android:name=".View.DetailedTrip" />
-        <activity android:name=".View.ChooseSeat">
+        <activity android:name=".View.Findtrip1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
