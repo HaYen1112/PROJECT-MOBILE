@@ -3,4 +3,29 @@
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
     <string name="n_i_dung">Nội dung</string>
+
+    <string name="name">Họ và tên(*):</string>
+    <string name="phone">Điện thoại(*):</string>
+    <string name="email">Email(*):</string>
+    <string name="address">Địa chỉ(*):</string>
+    <string name="birthday">Ngày sinh(*):</string>
+    <string name="gender">Giới tính:</string>
+    <string name="cmnd">Số CMND/Passport(*):</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+
+    <string name="ok">Xong</string>
+    <string name="cancel">Hủy</string>
+
+    <string name="please_enter_name">Bạn chưa nhập tên</string>
+    <string name="please_enter_phone">Bạn chưa nhập số điện thoại</string>
+    <string name="please_enter_email">Bạn chưa nhập email</string>
+    <string name="please_enter_address">Bạn chưa nhập địa chỉ</string>
+    <string name="please_enter_birthday">Bạn chưa chọn ngày sinh</string>
+    <string name="please_enter_course">Bạn chưa chọn khóa học</string>
+    <string name="please_enter_cmnd">Bạn chưa nhập Số CMND/Passport</string>
+    <string name="please_enter_places">Bạn chưa nhập những nơi đã đi trong 14 ngày qua</string>
+
+    <string name="success">Thành công</string>
+
 </resources>
