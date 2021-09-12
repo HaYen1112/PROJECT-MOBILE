@@ -2,6 +2,7 @@ package edu.nlu.probooktic.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -43,7 +44,7 @@ import static android.content.ContentValues.TAG;
 
 public class ChooseSeat extends AppCompatActivity implements View.OnClickListener {
     ViewGroup layout;
-
+    Toolbar myToolbar;
     ArrayList<Ticket> listTic = new ArrayList<>();
 
 
@@ -74,6 +75,12 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_seat);
+
+        myToolbar = findViewById(R.id.toolbarchooseseat);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         //da man hinh/////////////////////////
         Display display = getWindowManager().getDefaultDisplay();
