@@ -17,13 +17,21 @@
             android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="124dp"
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
             android:layout_marginTop="0dp"
             android:background="@drawable/top"
             android:scaleType="fitXY" />
 
         <LinearLayout
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="594dp"
+=======
+            android:layout_height="603dp"
+>>>>>>> main
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +40,18 @@
 
             <ScrollView
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="550dp"
                 tools:ignore="SpeakableTextPresentCheck">
+=======
+                android:layout_height="600dp">
+>>>>>>> main
 
                 <LinearLayout
                     android:id="@+id/layout_cartTic"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:orientation="vertical"
                     android:padding="10dp">
 
@@ -771,5 +784,20 @@
             </ScrollView>
 
         </LinearLayout>
+=======
+                    android:orientation="vertical" />
+            </ScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm_KBYT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button"
+            android:text="Xác nhận"
+            app:backgroundTint="@color/white"
+            app:backgroundTintMode="multiply" />
+>>>>>>> main
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

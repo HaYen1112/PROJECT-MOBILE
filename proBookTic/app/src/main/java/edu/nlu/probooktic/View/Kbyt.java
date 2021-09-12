@@ -1,10 +1,16 @@
 package edu.nlu.probooktic.View;
 
+<<<<<<< HEAD
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+>>>>>>> main
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.nlu.probooktic.R;
@@ -23,10 +29,17 @@ public class Kbyt extends AppCompatActivity {
 //
 //    private DatabaseReference mdata;
 
+=======
+import edu.nlu.probooktic.R;
+
+public class Kbyt extends AppCompatActivity {
+static final int RESULT_NO=1025;
+>>>>>>> main
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kbyt);
+<<<<<<< HEAD
         
 //        context = this;
 //
@@ -301,6 +314,9 @@ public class Kbyt extends AppCompatActivity {
 //
     Button confirm = (Button)findViewById(R.id.btn_confirm_KBYT);
 
+=======
+        Button confirm = (Button)findViewById(R.id.btn_confirm_KBYT);
+>>>>>>> main
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -312,6 +328,7 @@ public class Kbyt extends AppCompatActivity {
         });
 
     }
+<<<<<<< HEAD
 //    private void ok() {
 //        // get data
 //        String name = eName.getText().toString().trim();
@@ -375,4 +392,6 @@ public class Kbyt extends AppCompatActivity {
 //        return context.getResources().getString(id);
 //    }
 
+=======
+>>>>>>> main
 }
