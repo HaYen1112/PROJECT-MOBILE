@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".View.Menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <androidx.drawerlayout.widget.DrawerLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fitsSystemWindows="true"
+      android:id="@+id/menu_home"
+      >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbars"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:background="#0A80DF">
+              <TextView
+                  android:layout_width="200dp"
+                  android:layout_height="30dp"
+                  android:text="Ticket Booking App"
+                  android:layout_marginLeft="50dp"
+                  android:layout_marginTop="15dp"
+                  android:textSize="20dp"
+                  android:textColor="@color/black"/>
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:id="@+id/searchs"
+                  android:src="@android:drawable/ic_menu_search"
+                  android:layout_marginLeft="50dp"
+                  />
+
+          </androidx.appcompat.widget.Toolbar>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="741dp">
+
+              <ListView
+                  android:id="@+id/listTrips"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="0dp"
+                  android:background="#2196F3"></ListView>
+          </LinearLayout>
+      </LinearLayout>
+      <com.google.android.material.navigation.NavigationView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="start"
+          android:fitsSystemWindows="true"
+          android:id="@+id/navigation_menu"
+          android:layout_marginTop="30dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:src="@drawable/top"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listViewMenu"
+                android:layout_marginTop="65dp"
+                >
+            </ListView>
+      </com.google.android.material.navigation.NavigationView>
+  </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
