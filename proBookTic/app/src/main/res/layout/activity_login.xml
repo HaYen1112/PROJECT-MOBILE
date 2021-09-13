@@ -104,7 +104,7 @@
                         app:spinning_bar_width="4dp" />
 
                     <TextView
-                        android:id="@+id/comesignin1"
+                        android:id="@+id/comesignin12"
                         style="@style/parent"
                         android:layout_marginTop="@dimen/loginViewsMargin"
                         android:gravity="center_horizontal"

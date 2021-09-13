@@ -28,6 +28,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.nlu.probooktic.Model.Acount;
 import edu.nlu.probooktic.Model.Date;
 import edu.nlu.probooktic.Model.Trip;
 import edu.nlu.probooktic.Model.TripItem;
@@ -48,6 +49,8 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_home);
+        Acount acount = new Acount();
+        acount.inSertToDB();
         anhxa();
         actionToolBar();
         actionMenu();

@@ -220,7 +220,7 @@ public class Ticket implements Serializable {
         FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = mDatabase.getReference();
         for (Ticket t : list) {
-            myRef.child("ticket").child(t.getIdTic()).setValue(t);
+            myRef.child("ticketing").child(t.getIdTic()).setValue(t);
         }
 
     }
