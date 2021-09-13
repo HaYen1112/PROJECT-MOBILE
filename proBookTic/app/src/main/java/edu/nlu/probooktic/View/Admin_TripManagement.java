@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,6 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import edu.nlu.probooktic.Admin.TrangChuAdmin;
 import edu.nlu.probooktic.Model.TripInfo;
 import edu.nlu.probooktic.R;
 
@@ -25,11 +27,24 @@ public class Admin_TripManagement extends AppCompatActivity {
     private Button btnAddTrIn, btnAddTripAll;
     private ListView lvTripInfo;
     public static String test="No";
+    ImageView imageView;
+    String name;
     public  static TripManagementAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin__trip_management);
+        imageView = findViewById(R.id.home_chuyendi);
+        Intent intent = getIntent();
+        name = intent.getStringExtra("name");
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(Admin_TripManagement.this, TrangChuAdmin.class);
+                intent1.putExtra("name", name);
+                startActivity(intent1);
+            }
+        });
 
         btnAddTrIn = (Button)findViewById(R.id.buttonAddTrIn);
         btnAddTripAll = (Button)findViewById(R.id.buttonAddTripAll);
