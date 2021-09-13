@@ -18,6 +18,11 @@
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
         <activity android:name=".View.LoginActivity">
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".View.RegisterActivity" />
         <activity android:name=".View.Kbyt">
@@ -28,16 +33,13 @@
         <activity android:name=".View.ConfirmBooking" />
         <activity android:name=".View.Pay" />
         <activity android:name=".View.DetailedTrip" />
-        <activity android:name=".View.ChooseSeat">
-        </activity>
-        <activity android:name=".View.PromotionProgram"/>
-        <activity android:name=".View.PromotionDetail"/>
-        <activity android:name=".View.Menu">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".View.PromotionProgram">
+        <activity android:name=".View.ChooseSeat"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".View.PromotionDetail"/>
+
+        <activity android:name=".View.Menu">
+           
         </activity>
         <activity android:name=".Admin.TrangChuCustomer">
         </activity>
