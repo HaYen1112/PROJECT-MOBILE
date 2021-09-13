@@ -17,8 +17,10 @@
         <activity android:name=".View.Findtrip2" />
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
+
         <activity android:name=".View.LoginActivity">
           <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
