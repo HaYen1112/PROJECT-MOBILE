@@ -83,6 +83,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(), "Đăng Nhập Thành Công!",Toast.LENGTH_SHORT).show();
+
                     Intent i = new Intent(LoginActivity.this, TrangChuAdmin.class);
 //                    startActivity(i);
                     dataAcount.child("Acount").addChildEventListener(new ChildEventListener() {
@@ -116,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
 
                         }
                     });
-                }else{
+                  }else{
                     Toast.makeText(getApplicationContext(),"Đăng Nhập Không Thành Công!", Toast.LENGTH_SHORT).show();
                 }
 

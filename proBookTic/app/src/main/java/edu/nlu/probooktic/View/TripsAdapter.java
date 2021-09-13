@@ -62,6 +62,7 @@ public class TripsAdapter extends BaseAdapter {
         tVdiemKT = (TextView) convertView.findViewById(R.id.diemKT);
         tVidTrip = (TextView) convertView.findViewById(R.id.idTripp);
         tVBienSO = (TextView) convertView.findViewById(R.id.idBienSoo);
+
                 //gán gtri
         Trip trip = dstrip.get(position);
 

@@ -65,7 +65,9 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
     String selectedIds = "";
     static final String LIST_SEAT_CHOOSED = "listSeatChoosed";
     ArrayList<Integer> seatchoosed = null;//{1,8,9,....}
-    public static Trip trip = new Trip("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
+
+    public static Trip trip = null;//new TripInfo("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
+
     public static ArrayList<String> listSeatChoosed = new ArrayList<>();//{A1,A2,A3,....}
     TextView person;
     TextView seat;
@@ -86,6 +88,10 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
         seatGaping_LT = (int)width/30;
         seatGaping_TB = (int)width/27;
 
+        //////////////////////////////
+        //get the bundle to get list seat choosed
+        Intent intent=getIntent();
+        trip=(Trip)intent.getSerializableExtra("trip");
         //////////////////////////////
 
 

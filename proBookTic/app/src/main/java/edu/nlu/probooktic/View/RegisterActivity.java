@@ -92,7 +92,6 @@ public class RegisterActivity extends AppCompatActivity {
                     Intent i = new Intent(RegisterActivity.this, TrangChuAdmin.class);
                     i.putExtra("name", name);
                     startActivity(i);
-
                     databaseReference.child("Acount").child(name).setValue(new Acount(name, pass, email, sdt));
                 }else{
                     Toast.makeText(getApplicationContext(),"Tạo Tài Khoảng Không Thành Công!", Toast.LENGTH_SHORT ).show();
