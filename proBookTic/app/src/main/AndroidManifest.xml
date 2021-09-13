@@ -10,34 +10,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProBookTic">
-
-        <activity android:name=".View.AddTripInfomation"></activity>
-        <activity android:name=".View.Admin_TripManagement" />
+        <activity android:name=".View.AddTripInfomation">
+        </activity>
+        <activity android:name=".View.Admin_TripManagement">
+        </activity>
         <activity android:name=".View.Findtrip2" />
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
-        <activity android:name=".View.Findtrip1">
-            <intent-filter>
+
+        <activity android:name=".View.LoginActivity">
+          <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".View.RegisterActivity" />
-        <activity android:name=".View.Kbyt" />
+        <activity android:name=".View.Kbyt">
+        </activity>
         <activity android:name=".View.Info_Cus_Get_Ticket" />
         <activity android:name=".View.SeeTicketJustBooked" />
         <activity android:name=".View.PaymentSuccess" />
         <activity android:name=".View.ConfirmBooking" />
         <activity android:name=".View.Pay" />
         <activity android:name=".View.DetailedTrip" />
+        <activity android:name=".View.PromotionProgram">
         <activity android:name=".View.ChooseSeat"/>
-        <activity android:name=".View.PromotionProgram"/>
+
+        <activity android:name=".View.PromotionDetail"/>
+
         <activity android:name=".View.Menu">
-
-
+           
         </activity>
-        <activity android:name=".Admin.TrangChuAdmin"/>
+        <activity android:name=".Admin.TrangChuCustomer">
+        </activity>
+        <activity android:name=".Admin.TrangChuAdmin">
+        </activity>
     </application>
 
 </manifest>

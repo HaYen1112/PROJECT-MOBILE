@@ -61,7 +61,7 @@ public class TicketCart extends AppCompatActivity implements View.OnClickListene
     public static Trip trip;
     long widthScreen=0;
     long heightScreen=0;
-
+    String name;
     public static ArrayList<TicketCartModel> listTicChooseToPay = new ArrayList<>();
 
     Button btnCont;
