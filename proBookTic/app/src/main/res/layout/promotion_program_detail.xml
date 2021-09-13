@@ -9,21 +9,38 @@
     tools:layout_editor_absoluteY="10dp">
 
 
-    <ImageView
-        android:id="@+id/top3"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbars"
         android:layout_width="match_parent"
-        android:layout_height="124dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/top"
-        android:scaleType="fitXY" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0977CF">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/home_promotion"
+            android:src="@drawable/ic_homes"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="Chương Trình Khuyến Mãi"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#CAC9C9"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#FDFDFD">
 
         <TextView
-            android:id="@+id/txtNamePromotion"
+            android:id="@+id/txtNamePromotion1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -42,7 +59,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textDateStart"
+                android:id="@+id/textDateStart1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -141,7 +158,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="235dp">
+            android:layout_height="match_parent"
+            android:background="#FDFDFD">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -187,14 +205,14 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView56"
+                                    android:id="@+id/textView561"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Còn lại: "
                                     android:textColor="#000000" />
 
                                 <TextView
-                                    android:id="@+id/textView57"
+                                    android:id="@+id/textView572"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -205,7 +223,7 @@
                         </LinearLayout>
 
                         <Button
-                            android:id="@+id/button7"
+                            android:id="@+id/button71"
                             android:layout_width="78dp"
                             android:layout_height="68dp"
                             android:layout_gravity="center"
@@ -255,14 +273,14 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView56"
+                                    android:id="@+id/textView563"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Còn lại: "
                                     android:textColor="#000000" />
 
                                 <TextView
-                                    android:id="@+id/textView57"
+                                    android:id="@+id/textView574"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -273,7 +291,7 @@
                         </LinearLayout>
 
                         <Button
-                            android:id="@+id/button7"
+                            android:id="@+id/button72"
                             android:layout_width="78dp"
                             android:layout_height="68dp"
                             android:layout_gravity="center"
@@ -323,14 +341,14 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView56"
+                                    android:id="@+id/textView565"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Còn lại: "
                                     android:textColor="#000000" />
 
                                 <TextView
-                                    android:id="@+id/textView57"
+                                    android:id="@+id/textView576"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -341,7 +359,7 @@
                         </LinearLayout>
 
                         <Button
-                            android:id="@+id/button7"
+                            android:id="@+id/button73"
                             android:layout_width="78dp"
                             android:layout_height="68dp"
                             android:layout_gravity="center"
@@ -391,14 +409,14 @@
                                 android:orientation="horizontal">
 
                                 <TextView
-                                    android:id="@+id/textView56"
+                                    android:id="@+id/textView567"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Còn lại: "
-                                    android:textColor="#000000" />
+                                    android:textColor="#000000"/>
 
                                 <TextView
-                                    android:id="@+id/textView57"
+                                    android:id="@+id/textView578"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
@@ -409,7 +427,7 @@
                         </LinearLayout>
 
                         <Button
-                            android:id="@+id/button7"
+                            android:id="@+id/button74"
                             android:layout_width="78dp"
                             android:layout_height="68dp"
                             android:layout_gravity="center"
@@ -491,19 +509,19 @@
             </LinearLayout>
         </ScrollView>
 
-        <Button
-            android:id="@+id/btn_BackCTKM"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Quay về"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:backgroundTint="#244CBA"
-            app:cornerRadius="20dp" />
+<!--        <Button-->
+<!--            android:id="@+id/btn_BackCTKM"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text="Quay về"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:backgroundTint="#244CBA"-->
+<!--            app:cornerRadius="20dp" />-->
 
     </LinearLayout>
 

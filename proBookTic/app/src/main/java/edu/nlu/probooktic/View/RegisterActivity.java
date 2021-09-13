@@ -17,8 +17,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import edu.nlu.probooktic.Admin.TrangChuAdmin;
+import edu.nlu.probooktic.Model.Acount;
 import edu.nlu.probooktic.R;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -56,15 +59,17 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
     private void register() {
-        String pass,email;
+        String pass,email, name, sdt;
         pass = passEdit.getText().toString();
         email = emailEdit.getText().toString();
+        name = nameEdit.getText().toString();
+        sdt = sdtEdit.getText().toString();
 
         // kiểm tra ô trống hay không
-//        if(TextUtils.isEmpty(name)){
-//            Toast.makeText(this,"Vui Lòng Nhập Tên!",Toast.LENGTH_SHORT).show();
-//            return;
-//        }
+        if(TextUtils.isEmpty(name)){
+            Toast.makeText(this,"Vui Lòng Nhập Tên!",Toast.LENGTH_SHORT).show();
+            return;
+        }
         if(TextUtils.isEmpty(pass)){
             Toast.makeText(this,"Vui Lòng Nhập PassWord!",Toast.LENGTH_SHORT).show();
             return;
@@ -73,18 +78,21 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(this,"Vui Lòng Nhập Email!",Toast.LENGTH_SHORT).show();
             return;
         }
-//        if(TextUtils.isEmpty(sdt)){
-//            Toast.makeText(this,"Vui Lòng Nhập Số Điện Thoại!",Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-        firebaseAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        if(TextUtils.isEmpty(sdt)){
+            Toast.makeText(this,"Vui Lòng Nhập Số Điện Thoại!",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference databaseReference = firebaseDatabase.getReference();
+        firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(),"Tạo Tài Khoảng Thành Công!", Toast.LENGTH_SHORT ).show();
-
-                    Intent i = new Intent(RegisterActivity.this, Menu.class);
+                    Intent i = new Intent(RegisterActivity.this, TrangChuAdmin.class);
+                    i.putExtra("name", name);
                     startActivity(i);
+                    databaseReference.child("Acount").child(name).setValue(new Acount(name, pass, email, sdt));
                 }else{
                     Toast.makeText(getApplicationContext(),"Tạo Tài Khoảng Không Thành Công!", Toast.LENGTH_SHORT ).show();
 
