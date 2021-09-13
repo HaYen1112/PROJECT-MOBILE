@@ -5,12 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center|top"
+
+    android:orientation="vertical">
+
     android:orientation="vertical"
     android:background="@color/white">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbars"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+
+        android:background="#0A80DF">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="Chương trình khuyến mãi"
+
         android:background="#0977CF">
         <ImageView
             android:layout_width="50dp"
@@ -22,14 +32,52 @@
             android:layout_width="250dp"
             android:layout_height="30dp"
             android:text="Chương Trình Khuyến Mãi"
+
             android:layout_marginLeft="50dp"
             android:layout_marginTop="15dp"
             android:textStyle="bold"
             android:textSize="20dp"
+
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/searchs"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_marginLeft="50dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+<!--    <ImageView-->
+<!--        android:id="@+id/top2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="@drawable/top"-->
+<!--        android:scaleType="fitXY" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView28"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:text="Chương Trình Khuyến Mãi"-->
+<!--        android:textColor="#244CBA"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.487"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="TextContrastCheck" />-->
+
             android:textColor="@color/white"/>
 
     </androidx.appcompat.widget.Toolbar>
-
 
     <ScrollView
         android:layout_marginTop="10dp"
@@ -101,7 +149,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -169,7 +217,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -240,7 +288,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -308,7 +356,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -376,7 +424,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -444,7 +492,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -512,7 +560,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_menu_dialog"
                 app:cardCornerRadius="15dp"
-                app:cardElevation="15dp">
+                app:cardElevation="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
