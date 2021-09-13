@@ -83,7 +83,7 @@ public class RegisterActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(),"Tạo Tài Khoảng Thành Công!", Toast.LENGTH_SHORT ).show();
 
-                    Intent i = new Intent(RegisterActivity.this, TrangChuAdmin.class);
+                    Intent i = new Intent(RegisterActivity.this, Menu.class);
                     startActivity(i);
                 }else{
                     Toast.makeText(getApplicationContext(),"Tạo Tài Khoảng Không Thành Công!", Toast.LENGTH_SHORT ).show();

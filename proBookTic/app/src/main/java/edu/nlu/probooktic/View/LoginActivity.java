@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(), "Đăng Nhập Thành Công!",Toast.LENGTH_SHORT).show();
 
-                    Intent i = new Intent(LoginActivity.this, TrangChuAdmin.class);
+                    Intent i = new Intent(LoginActivity.this, Menu.class);
                     startActivity(i);
                 }else{
                     Toast.makeText(getApplicationContext(),"Đăng Nhập Không Thành Công!", Toast.LENGTH_SHORT).show();

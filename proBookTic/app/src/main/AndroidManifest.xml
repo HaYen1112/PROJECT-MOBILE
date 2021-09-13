@@ -23,7 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".View.RegisterActivity" />
-        <activity android:name=".View.Kbyt" />
+        <activity android:name=".View.Kbyt">
+
+        </activity>
         <activity android:name=".View.Info_Cus_Get_Ticket" />
         <activity android:name=".View.SeeTicketJustBooked" />
         <activity android:name=".View.PaymentSuccess" />
