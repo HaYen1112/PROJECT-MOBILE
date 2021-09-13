@@ -106,7 +106,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="yyyy-mm-dd"
-                    android:inputType="date" />
+                    android:inputType="textPersonName" />
 
             </LinearLayout>
 
@@ -137,6 +137,7 @@
                     android:layout_weight="1"
                     android:text="HỦY" />
             </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
