@@ -10,9 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProBookTic">
-
-        <activity android:name=".View.AddTripInfomation"></activity>
-        <activity android:name=".View.Admin_TripManagement" />
+        <activity android:name=".View.AddTripInfomation">
+        </activity>
+        <activity android:name=".View.Admin_TripManagement">
+        </activity>
         <activity android:name=".View.Findtrip2" />
         <activity android:name=".View.Findtrip3" />
         <activity android:name=".View.FailedPayment" />
@@ -25,7 +26,6 @@
         </activity>
         <activity android:name=".View.RegisterActivity" />
         <activity android:name=".View.Kbyt">
-
         </activity>
         <activity android:name=".View.Info_Cus_Get_Ticket" />
         <activity android:name=".View.SeeTicketJustBooked" />
@@ -35,14 +35,15 @@
         <activity android:name=".View.DetailedTrip" />
         <activity android:name=".View.PromotionProgram">
         <activity android:name=".View.ChooseSeat"/>
+
         <activity android:name=".View.PromotionDetail"/>
 
         <activity android:name=".View.Menu">
            
         </activity>
+        <activity android:name=".Admin.TrangChuCustomer">
+        </activity>
         <activity android:name=".Admin.TrangChuAdmin">
-
-
         </activity>
     </application>
 

@@ -38,6 +38,7 @@ import edu.nlu.probooktic.Model.Ticket;
 import edu.nlu.probooktic.Model.TicketCartModel;
 import edu.nlu.probooktic.Model.TicketDAO;
 import edu.nlu.probooktic.Model.Trip;
+import edu.nlu.probooktic.Model.TripInfo;
 import edu.nlu.probooktic.R;
 
 import static android.content.ContentValues.TAG;
@@ -66,7 +67,7 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
     static final String LIST_SEAT_CHOOSED = "listSeatChoosed";
     ArrayList<Integer> seatchoosed = null;//{1,8,9,....}
 
-    public static Trip trip = null;//new TripInfo("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
+    public static Trip trip;//new TripInfo("TR0001", "Tiền Giang", "TP.HCM", new Date(), "9:00", "13:00", "63F-5236");
 
     public static ArrayList<String> listSeatChoosed = new ArrayList<>();//{A1,A2,A3,....}
     TextView person;
@@ -91,9 +92,8 @@ public class ChooseSeat extends AppCompatActivity implements View.OnClickListene
         //////////////////////////////
         //get the bundle to get list seat choosed
         Intent intent=getIntent();
-        trip=(Trip)intent.getSerializableExtra("trip");
+        trip = (Trip) intent.getSerializableExtra("trip");
         //////////////////////////////
-
 
         Query query = FirebaseDatabase.getInstance().getReference("ticket")
                 .orderByChild("idTrip")

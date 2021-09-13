@@ -115,6 +115,6 @@ public class TripInfo {
     }
 
     public static void main(String[] args) {
-
+        insertDB(createList());
     }
 }

@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="281dp"
-        tools:layout_editor_absoluteY="113dp">
+        tools:layout_editor_absoluteY="113dp"
+        android:background="#68B5F3">
         <ImageView
             android:id="@+id/top"
             android:layout_width="match_parent"
@@ -53,6 +54,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:text="Điểm Khởi Hành:" />
 
                     <EditText
@@ -75,6 +77,7 @@
                         android:layout_width="105dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:text="Điểm đến:" />
 
                     <EditText
@@ -97,6 +100,7 @@
                         android:layout_width="105dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:text="Thời gian đi:" />
 
                     <EditText
@@ -119,6 +123,7 @@
                         android:layout_width="105dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:text="Thời gian đến:" />
 
                     <EditText
@@ -141,6 +146,7 @@
                         android:layout_width="105dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/black"
                         android:text="Biển số xe:" />
 
                     <EditText

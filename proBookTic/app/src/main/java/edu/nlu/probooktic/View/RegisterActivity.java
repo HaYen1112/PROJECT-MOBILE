@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import edu.nlu.probooktic.Admin.TrangChuAdmin;
+import edu.nlu.probooktic.Admin.TrangChuCustomer;
 import edu.nlu.probooktic.Model.Acount;
 import edu.nlu.probooktic.R;
 
@@ -89,7 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(),"Tạo Tài Khoảng Thành Công!", Toast.LENGTH_SHORT ).show();
-                    Intent i = new Intent(RegisterActivity.this, TrangChuAdmin.class);
+                    Intent i = new Intent(RegisterActivity.this, TrangChuCustomer.class);
                     i.putExtra("name", name);
                     startActivity(i);
                     databaseReference.child("Acount").child(name).setValue(new Acount(name, pass, email, sdt));

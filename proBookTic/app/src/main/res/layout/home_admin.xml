@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Admin.TrangChuAdmin"
-    >
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,42 +13,44 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#0977CF">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbars"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#0977CF">
+                android:layout_marginLeft="20dp"
+                android:background="#0977CF"
+                android:layout_marginTop="30dp">
                 <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="30dp"
-                    android:text="Ticket Booking App"
-                    android:layout_marginLeft="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Ticket Booking App - Admin"
                     android:layout_marginTop="15dp"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:textColor="@color/black"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:id="@+id/searchs"
-                    android:src="@android:drawable/ic_menu_search"
-                    android:layout_marginLeft="50dp"
-                    />
 
             </androidx.appcompat.widget.Toolbar>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:text="QUẢN LÝ THÔNG TIN"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="30dp"
+                android:layout_height="50dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="741dp">
-
-                <ListView
-                    android:id="@+id/listTrips"
+                android:layout_height="750dp"
+                android:background="@color/white">
+                <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="0dp"
-                    android:background="#2196F3"></ListView>
+                    android:src="@drawable/trip"/>
+
             </LinearLayout>
         </LinearLayout>
         <com.google.android.material.navigation.NavigationView
@@ -75,6 +73,5 @@
             </ListView>
         </com.google.android.material.navigation.NavigationView>
     </androidx.drawerlayout.widget.DrawerLayout>
-
 
 </LinearLayout>

@@ -61,7 +61,7 @@ public class Acount implements Serializable {
 
         }
     }
-    private ArrayList<Acount> createListAcount() {
+    public ArrayList<Acount> createListAcount() {
             ArrayList<Acount> arrayList = new ArrayList<>();
             arrayList.add(new Acount("Trương Văn Xinh", "123456", "xinh@gmail.com", "0844362969"));
             arrayList.add(new Acount("Lâm Hà Yến", "123456", "yen@gmail.com", "0844362969"));
